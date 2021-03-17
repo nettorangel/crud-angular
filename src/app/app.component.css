@@ -1,0 +1,18 @@
+.social-part .fa{
+    padding-right:20px;
+    size: 15px;
+}
+ul li a{
+    margin-right: 20px;
+}
+
+footer { width:100%;   
+    bottom: 0;
+    left: 0;
+    height: 120px;
+    position: fixed;
+    background-color:#fff; 
+
+    padding:20px 0px 20px 0px ;}
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:0px; float:left; }

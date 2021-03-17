@@ -1,0 +1,89 @@
+<section class="user-list padding-lg text-center">
+  <div class="container shadow bg-white rounded" *ngIf="request">
+    <div class="row">
+      <div class="col-12 col-md-12" style="height: 250px">
+        <p class="text-uppercase pull-center">Atualizar Dados</p>
+        <div class="form-group">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="form-control input-lg"
+            placeholder="Qual o seu nome?"
+            [(ngModel)]="request.name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name="job"
+            id="job"
+            class="form-control input-lg"
+            placeholder="Com o que você trabalha?"
+            [(ngModel)]="request.job"
+          />
+        </div>
+        <div>
+          <button
+            class="btn btn-lg btn-primary"
+            value="Register"
+            (click)="update()"
+            data-toggle="modal"
+            data-target="#modalUpdate"
+          >
+            Atualizar
+          </button>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="modalUpdate"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalUpdate"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h5 style="color: #0fad00" class="text-center">
+                Usuário atualizado com Sucesso
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Fechar"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p style="font-size: 20px; color: #5c5c5c">
+                {{ response.name }},
+              </p>
+              <p style="font-size: 20px; color: #5c5c5c">
+                Suas informações foram atualizadas
+              </p>
+              <p style="font-size: 20px; color: #5c5c5c">
+                em {{ response.updatedAt | date: "yyyy-MM-dd HH:mm:ss" }}
+              </p>
+              <p style="font-size: 20px; color: #5c5c5c">
+                Profissão atualizada : <strong>{{ response.job }}</strong>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

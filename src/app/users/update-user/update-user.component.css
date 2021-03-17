@@ -1,0 +1,9 @@
+.container{
+    background-color:white;
+    padding:50px;   
+}
+.padding-lg {
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}

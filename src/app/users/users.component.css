@@ -1,0 +1,107 @@
+
+.container{background-color:white;padding:30px;   }
+.row.heading h2 {
+    color: #025a8e;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+li{
+    margin: 35px;
+}  
+.padding-lg {
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.practice-area .inner{ 
+	 text-align:center; 
+	 margin-bottom:28px; 
+	 padding:40px 25px;
+}
+.practice-area .inner h3{ 
+    color:#3c3c3c; 
+	font-size:24px; 
+	font-weight:500;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px 0;
+}
+.practice-area .inner p{ 
+    font-size:14px; 
+	line-height:22px; 
+	font-weight:400;
+}
+.practice-area .inner img{
+	display:inline-block;
+}
+
+.user-list .user img{ 
+    width:120px; 
+    height:120px; 
+    border-radius:100%; 
+ }
+.user-list{
+ color:#333
+  
+}
+.user-list .user{ 
+   float:left; 
+   width:100%; 
+   background:#fff; 
+   padding:30px 10px; 
+   text-align:center; 
+   margin: 2px;
+}
+.user-list .user h3{ 
+   color:#2a2a2a; 
+   font-size:17px; 
+   font-weight:500; 
+   padding:6px 0;
+   text-transform:uppercase;
+}
+.user-list .user h3 a{
+  text-decoration:none;
+	color:#2a2a2a;
+}
+.user-list .user h3 a:hover{
+	color:#337ab7;
+}
+.user-list .user p{ 
+   color:#2a2a2a; 
+   font-size:13px; 
+   line-height:20px; 
+   font-weight:400;
+}
+.user-list .user .actions{
+	margin:20px 0 0;
+   
+}
+.user-list .user .actions li{ 
+    display:inline-block; 
+	width:auto; 
+	margin:0 5px;
+}
+.user-list .user .actions li .fa{ 
+   font-size:30px; 
+   color:#767676;
+   margin:15px
+}
+.user-list .user .actions li .fa:hover{ 
+   color:#025a8e;
+}
+.fa{
+    color:#4183D7;
+}
